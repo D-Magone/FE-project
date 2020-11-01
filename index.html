@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div class="grid-container">
+    
+    <div class="sidebar sidebar-small">
+      <button id="buttonS">S</button>
+      <form id="user-form" novalidate>
+        <h1>Subscribe below</h1>
+        <div class="input-wrapper">
+          <label>
+            Username
+            <input name="username">
+          </label>
+          <div class="error-msg username"></div>
+        </div>
+        <div class="input-wrapper">
+          <label>
+            Email
+            <input type="email" name="email">
+          </label>
+          <div class="error-msg email"></div>
+        </div>
+        <input type="hidden" name="user-id">
+        <div class="input-wrapper">
+          <label id ="checkbox-inline" class="checkbox-inline">
+            Send me special deals
+          <input class= "form-check-input" type="checkbox" name="checkbox" id="checkbox-offer">
+          </label>
+        </div>
+        <div>
+          <select name="select" id="select">
+            <option value="" selected disabled hidden>Receive them</option>
+            <option value="Hourly">Hourly</option>
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+          </select>
+        </div> 
+        <br>
+        <button type="button" id="save-btn" class="btn btn-outline-light text-dark">Save</button>
+      </form>
+    </div>
+    
+    <div class="main-content">
+      <table id="users-table" class="table table-hover">
+        <thead class="thead-dark">
+          <td>#</td>
+          <td>Username</td>
+          <td>Email</td>
+          <td>Special Offer</td>
+          <td>Offer Cycle</td>
+          <td></td>
+          <td></td>
+        </thead>
+        <tbody>
+          <tr style="display: none" class="tr-example">
+            <td class="username"></td>
+            <td class="email"></td>
+            <td><span class="material-icons edit-btn btn">edit</span></td>
+            <td>  
+              <span class="material-icons delete-btn btn">person_remove</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <div class="modal-content modal-dialog">
+        <span class="close">&times;</span>
+        <p id="modal-content">fffffffffffff</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script>
+
+</script>
+</html>
